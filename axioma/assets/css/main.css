@@ -1,0 +1,57 @@
+* {
+    transition: all 0.15s;
+}
+header {
+    border-bottom: 1px solid #444444;
+}
+.menu {
+
+}
+.menu__link {
+    transition: all 0.3s;
+}
+.menu__link:hover {
+    color: red;
+}
+.category__container {
+    border-radius: 0px;
+}
+.category {
+    background-color: #E5E5E5;
+}
+.menu__category {
+    position: relative;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 0px;
+    border: none;
+    color: #000;
+    padding-left: 20px;
+}
+
+.menu__category::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*transform: translateX(-50%);*/
+    width: 0px;
+    height: 1px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+.menu__category:hover::after {
+    height: 100px;
+}
+
+
+
+
+
+.news-btn, .publications-btn {
+    text-decoration: none;
+}
+
+.list-group .list-group-item .text-decoration-none {
+    color: black !important;
+}
